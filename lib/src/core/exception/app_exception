@@ -1,0 +1,16 @@
+/// Interface implemented app exceptions.
+abstract class AppException implements Exception {}
+
+/// Lỗi chưa được khai báo.
+class UnexpectedError extends Error implements AppException {
+  UnexpectedError([this.message]);
+
+  /// Thông báo mô tả lỗi
+  final Object? message;
+
+  @override
+  String toString() {
+    if (message != null) return Error.safeToString(message);
+    return 'Unexpected error.';
+  }
+}
