@@ -1,0 +1,424 @@
+{
+    "point": [
+        {
+            "score": "1-17",
+            "listen": "10",
+            "read": "5"
+        },
+        {
+            "score": "18",
+            "listen": "10",
+            "read": "5"
+        },
+        {
+            "score": "19",
+            "listen": "15",
+            "read": "5"
+        },
+        {
+            "score": "20",
+            "listen": "20",
+            "read": "5"
+        },
+        {
+            "score": "21",
+            "listen": "25",
+            "read": "5"
+        },
+        {
+            "score": "22",
+            "listen": "30",
+            "read": "10"
+        },
+        {
+            "score": "23",
+            "listen": "35",
+            "read": "15"
+        },
+        {
+            "score": "24",
+            "listen": "40",
+            "read": "20"
+        },
+        {
+            "score": "25",
+            "listen": "45",
+            "read": "25"
+        },
+        {
+            "score": "26",
+            "listen": "50",
+            "read": "30"
+        },
+        {
+            "score": "27",
+            "listen": "55",
+            "read": "35"
+        },
+        {
+            "score": "28",
+            "listen": "60",
+            "read": "40"
+        },
+        {
+            "score": "29",
+            "listen": "70",
+            "read": "45"
+        },
+        {
+            "score": "30",
+            "listen": "80",
+            "read": "55"
+        },
+        {
+            "score": "31",
+            "listen": "85",
+            "read": "60"
+        },
+        {
+            "score": "32",
+            "listen": "90",
+            "read": "65"
+        },
+        {
+            "score": "33",
+            "listen": "95",
+            "read": "70"
+        },
+        {
+            "score": "34",
+            "listen": "100",
+            "read": "75"
+        },
+        {
+            "score": "35",
+            "listen": "105",
+            "read": "80"
+        },
+        {
+            "score": "36",
+            "listen": "115",
+            "read": "85"
+        },
+        {
+            "score": "37",
+            "listen": "125",
+            "read": "90"
+        },
+        {
+            "score": "38",
+            "listen": "135",
+            "read": "95"
+        },
+        {
+            "score": "39",
+            "listen": "140",
+            "read": "105"
+        },
+        {
+            "score": "40",
+            "listen": "150",
+            "read": "115"
+        },
+        {
+            "score": "41",
+            "listen": "160",
+            "read": "120"
+        },
+        {
+            "score": "42",
+            "listen": "170",
+            "read": "125"
+        },
+        {
+            "score": "43",
+            "listen": "175",
+            "read": "130"
+        },
+        {
+            "score": "44",
+            "listen": "180",
+            "read": "135"
+        },
+        {
+            "score": "45",
+            "listen": "190",
+            "read": "140"
+        },
+        {
+            "score": "46",
+            "listen": "200",
+            "read": "145"
+        },
+        {
+            "score": "47",
+            "listen": "205",
+            "read": "155"
+        },
+        {
+            "score": "48",
+            "listen": "215",
+            "read": "160"
+        },
+        {
+            "score": "49",
+            "listen": "220",
+            "read": "170"
+        },
+        {
+            "score": "50",
+            "listen": "225",
+            "read": "175"
+        },
+        {
+            "score": "51",
+            "listen": "230",
+            "read": "185"
+        },
+        {
+            "score": "52",
+            "listen": "235",
+            "read": "195"
+        },
+        {
+            "score": "53",
+            "listen": "245",
+            "read": "205"
+        },
+        {
+            "score": "54",
+            "listen": "255",
+            "read": "210"
+        },
+        {
+            "score": "55",
+            "listen": "260",
+            "read": "215"
+        },
+        {
+            "score": "56",
+            "listen": "265",
+            "read": "220"
+        },
+        {
+            "score": "57",
+            "listen": "275",
+            "read": "230"
+        },
+        {
+            "score": "58",
+            "listen": "285",
+            "read": "240"
+        },
+        {
+            "score": "59",
+            "listen": "290",
+            "read": "245"
+        },
+        {
+            "score": "60",
+            "listen": "295",
+            "read": "250"
+        },
+        {
+            "score": "61",
+            "listen": "300",
+            "read": "255"
+        },
+        {
+            "score": "62",
+            "listen": "310",
+            "read": "260"
+        },
+        {
+            "score": "63",
+            "listen": "320",
+            "read": "270"
+        },
+        {
+            "score": "64",
+            "listen": "325",
+            "read": "275"
+        },
+        {
+            "score": "65",
+            "listen": "330",
+            "read": "280"
+        },
+        {
+            "score": "66",
+            "listen": "335",
+            "read": "285"
+        },
+        {
+            "score": "67",
+            "listen": "340",
+            "read": "290"
+        },
+        {
+            "score": "68",
+            "listen": "345",
+            "read": "295"
+        },
+        {
+            "score": "69",
+            "listen": "350",
+            "read": "295"
+        },
+        {
+            "score": "70",
+            "listen": "355",
+            "read": "300"
+        },
+        {
+            "score": "71",
+            "listen": "360",
+            "read": "310"
+        },
+        {
+            "score": "72",
+            "listen": "365",
+            "read": "315"
+        },
+        {
+            "score": "73",
+            "listen": "370",
+            "read": "320"
+        },
+        {
+            "score": "74",
+            "listen": "375",
+            "read": "325"
+        },
+        {
+            "score": "75",
+            "listen": "385",
+            "read": "330"
+        },
+        {
+            "score": "76",
+            "listen": "395",
+            "read": "335"
+        },
+        {
+            "score": "77",
+            "listen": "400",
+            "read": "340"
+        },
+        {
+            "score": "78",
+            "listen": "405",
+            "read": "345"
+        },
+        {
+            "score": "79",
+            "listen": "415",
+            "read": "355"
+        },
+        {
+            "score": "80",
+            "listen": "420",
+            "read": "360"
+        },
+        {
+            "score": "81",
+            "listen": "425",
+            "read": "370"
+        },
+        {
+            "score": "82",
+            "listen": "430",
+            "read": "375"
+        },
+        {
+            "score": "83",
+            "listen": "435",
+            "read": "385"
+        },
+        {
+            "score": "84",
+            "listen": "440",
+            "read": "390"
+        },
+        {
+            "score": "85",
+            "listen": "445",
+            "read": "395"
+        },
+        {
+            "score": "86",
+            "listen": "455",
+            "read": "405"
+        },
+        {
+            "score": "87",
+            "listen": "460",
+            "read": "415"
+        },
+        {
+            "score": "88",
+            "listen": "465",
+            "read": "420"
+        },
+        {
+            "score": "89",
+            "listen": "475",
+            "read": "425"
+        },
+        {
+            "score": "90",
+            "listen": "480",
+            "read": "435"
+        },
+        {
+            "score": "91",
+            "listen": "485",
+            "read": "440"
+        },
+        {
+            "score": "92",
+            "listen": "490",
+            "read": "450"
+        },
+        {
+            "score": "93",
+            "listen": "495",
+            "read": "455"
+        },
+        {
+            "score": "94",
+            "listen": "495",
+            "read": "460"
+        },
+        {
+            "score": "95",
+            "listen": "495",
+            "read": "470"
+        },
+        {
+            "score": "96",
+            "listen": "495",
+            "read": "475"
+        },
+        {
+            "score": "97",
+            "listen": "495",
+            "read": "485"
+        },
+        {
+            "score": "98",
+            "listen": "495",
+            "read": "485"
+        },
+        {
+            "score": "99",
+            "listen": "495",
+            "read": "490"
+        },
+        {
+            "score": "100",
+            "listen": "495",
+            "read": "495"
+        }
+    ]
+}
