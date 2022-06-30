@@ -4,6 +4,7 @@ import 'package:duck/src/presentation/cubit/remote_articles_cubit.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_native_splash/flutter_native_splash.dart';
 
 import 'src/config/routes/app_routes.dart';
 import 'src/core/utils/constants.dart';
@@ -18,9 +19,12 @@ Future<void> main() async {
   //       () => runApp( MyApp()),
   //   blocObserver: AppBlocObserver(),
   // );
+  FlutterNativeSplash.removeAfter(initialization);
   runApp(MyApp());
 }
-
+Future initialization(BuildContext context) async{
+  await Future.delayed(Duration(seconds: 3));
+}
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
