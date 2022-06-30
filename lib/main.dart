@@ -1,3 +1,4 @@
+import 'package:duck/src/config/bloc/app_bloc_observer.dart';
 import 'package:duck/src/config/themes/app_theme.dart';
 import 'package:duck/src/injector.dart';
 import 'package:duck/src/presentation/cubit/remote_articles_cubit.dart';
@@ -15,12 +16,12 @@ Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   // await registerDependencies();
   await initializeDependencies();
-  // BlocOverrides.runZoned(
-  //       () => runApp( MyApp()),
-  //   blocObserver: AppBlocObserver(),
-  // );
+  BlocOverrides.runZoned(
+        () => runApp( MyApp()),
+    blocObserver: AppBlocObserver(),
+  );
   FlutterNativeSplash.removeAfter(initialization);
-  runApp(MyApp());
+  // runApp(MyApp());
 }
 Future initialization(BuildContext context) async{
   await Future.delayed(Duration(seconds: 3));
