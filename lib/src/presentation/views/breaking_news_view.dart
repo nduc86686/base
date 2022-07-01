@@ -4,7 +4,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:ionicons/ionicons.dart';
 
 import '../../domain/entities/article.dart';
-import '../cubit/remote_articles_cubit.dart';
+import '../cubit/remote_articles/remote_articles_cubit.dart';
 import '../widgets/article_widget.dart';
 
 class BreakingNewsView extends StatefulWidget {

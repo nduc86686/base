@@ -1,5 +1,5 @@
 import 'package:dio/dio.dart';
-import 'package:duck/src/presentation/cubit/remote_articles_cubit.dart';
+import 'package:duck/src/presentation/cubit/remote_articles/remote_articles_cubit.dart';
 import 'package:get_it/get_it.dart';
 
 import 'data/datasources/remote/news_api_service.dart';

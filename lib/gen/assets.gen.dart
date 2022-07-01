@@ -86,6 +86,9 @@ class $AssetsIconsGen {
   /// File path: assets/icons/ic_pen.svg
   SvgGenImage get icPen => const SvgGenImage('assets/icons/ic_pen.svg');
 
+  /// File path: assets/icons/icon.jpg
+  AssetGenImage get icon => const AssetGenImage('assets/icons/icon.jpg');
+
   /// File path: assets/icons/mail.svg
   SvgGenImage get mail => const SvgGenImage('assets/icons/mail.svg');
 
@@ -181,6 +184,7 @@ class Assets {
   static const $AssetsIconsGen icons = $AssetsIconsGen();
   static const $AssetsImagesGen images = $AssetsImagesGen();
   static const $AssetsJsonGen json = $AssetsJsonGen();
+  static const AssetGenImage logo = AssetGenImage('assets/logo.png');
   static const $AssetsSvgGen svg = $AssetsSvgGen();
 }
 

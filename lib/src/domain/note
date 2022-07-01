@@ -1,0 +1,3 @@
+Miền là lớp bên trong không dễ bị ảnh hưởng bởi  nguồn dữ liệu. Nó sẽ chỉ chứa "business logic" cốt lõi
+ (use cases) và business objects (entities)
+Nó phải hoàn toàn độc lập với mọi lớp khác

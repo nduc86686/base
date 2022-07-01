@@ -1,7 +1,8 @@
 import 'package:duck/src/config/bloc/app_bloc_observer.dart';
+import 'package:duck/src/config/injection/dependency_injection.dart';
 import 'package:duck/src/config/themes/app_theme.dart';
 import 'package:duck/src/injector.dart';
-import 'package:duck/src/presentation/cubit/remote_articles_cubit.dart';
+import 'package:duck/src/presentation/cubit/remote_articles/remote_articles_cubit.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -32,7 +33,8 @@ class MyApp extends StatelessWidget {
     return MultiBlocProvider(
       providers: [
         BlocProvider(
-          create: (_) => injector<RemoteArticlesCubit>()..getData(),
+          // create: (_) => injector<RemoteArticlesCubit>()..getData(),
+          create: (_) => getIt<RemoteArticlesCubit>()..getData(),
         ),
       ],
       child: MaterialApp(

@@ -1,0 +1,12 @@
+Lớp data bao gồm triển khai các phương thức Responsitory (domain) và data source - một lớp
+thường là để lấy dữ liệu từ xa (API) và lớp còn lại để lưu vào bộ nhớ đệm dữ liệu đó. Kho lưu trữ
+là nơi bạn quyết định xem bạn trả lại dữ liệu mới hay đã lưu trong bộ nhớ cache, khi nào nên lưu
+vào bộ nhớ cache, v.v
+   ===========
+ Các datasource không trả về Entries mà là Model
+ Lý do đằng sau điều này là việc chuyển đổi dữ liệu thô (ví dụ JSON) thành các đối tượng Dart yêu cầu một số mã chuyển đổi JSON.
+ Chúng tôi không muốn mã dành riêng cho JSON này bên trong
+ các Thực thể miền - điều gì sẽ xảy ra nếu chúng tôi quyết định chuyển sang XML?
+ =============
+ Do đó, chúng tôi tạo các lớp Mô hình mở rộng Thực thể và thêm một số chức năng cụ thể (toJson, fromJson)
+ hoặc các trường bổ sung, chẳng hạn như ID cơ sở dữ liệu.(model lớp này sẽ chứa toJson và FromJson)
