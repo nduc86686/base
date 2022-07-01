@@ -1,6 +1,8 @@
 import 'package:dio/dio.dart';
-import 'package:duck/src/presentation/cubit/remote_articles_cubit.dart';
+import 'package:duck/src/presentation/cubit/audio_cubit/audio_cubit.dart';
+import 'package:duck/src/presentation/cubit/remote_articles/remote_articles_cubit.dart';
 import 'package:get_it/get_it.dart';
+import 'package:just_audio/just_audio.dart';
 
 import 'data/datasources/remote/news_api_service.dart';
 import 'data/repositories/articles_repository_impl.dart';
@@ -25,4 +27,11 @@ Future<void> initializeDependencies() async {
   // Blocs
   injector.registerFactory<RemoteArticlesCubit>(
       () => RemoteArticlesCubit(injector()));
+
+  injector.registerFactory<AudioCubit>(
+      () => AudioCubit(injector()));
+
+  injector.registerFactory<AudioPlayer>(
+      () => AudioPlayer());
+
 }

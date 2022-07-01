@@ -1,11 +1,14 @@
 import 'package:dio/dio.dart';
+import 'package:injectable/injectable.dart';
 import 'package:retrofit/retrofit.dart';
 
 import '../../../core/utils/constants.dart';
 import '../../models/breaking_news_response_model.dart';
+
 part 'news_api_service.g.dart';
 
 @RestApi(baseUrl: kBaseUrl)
+@factoryMethod
 abstract class NewsApiService {
   factory NewsApiService(Dio dio, {String baseUrl}) = _NewsApiService;
 

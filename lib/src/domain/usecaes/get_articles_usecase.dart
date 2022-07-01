@@ -12,9 +12,10 @@ class GetArticlesUseCase
   final ArticlesRepository _articlesRepository;
 
   GetArticlesUseCase(this._articlesRepository);
-
+     ///2
   @override
   Future<DataState<List<Article>>> call({ArticlesRequestParams? params}) {
+    ///3
     return _articlesRepository.getBreakingNewsArticles(params!);
   }
 }

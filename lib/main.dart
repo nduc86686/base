@@ -1,7 +1,10 @@
 import 'package:duck/src/config/bloc/app_bloc_observer.dart';
+import 'package:duck/src/config/injection/dependency_injection.dart';
 import 'package:duck/src/config/themes/app_theme.dart';
 import 'package:duck/src/injector.dart';
-import 'package:duck/src/presentation/cubit/remote_articles_cubit.dart';
+import 'package:duck/src/presentation/cubit/audio_cubit/audio_cubit.dart';
+import 'package:duck/src/presentation/cubit/login_cubit/login_screen_cubit.dart';
+import 'package:duck/src/presentation/cubit/remote_articles/remote_articles_cubit.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -17,23 +20,30 @@ Future<void> main() async {
   // await registerDependencies();
   await initializeDependencies();
   BlocOverrides.runZoned(
-        () => runApp( MyApp()),
+    () => runApp(MyApp()),
     blocObserver: AppBlocObserver(),
   );
   FlutterNativeSplash.removeAfter(initialization);
   // runApp(MyApp());
 }
-Future initialization(BuildContext context) async{
+
+Future initialization(BuildContext context) async {
   await Future.delayed(Duration(seconds: 3));
 }
+
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MultiBlocProvider(
       providers: [
         BlocProvider(
-          create: (_) => injector<RemoteArticlesCubit>()..getData(),
+          // create: (_) => injector<RemoteArticlesCubit>()..getData(),
+          create: (_) => getIt<RemoteArticlesCubit>()..getData(),
         ),
+        BlocProvider(
+            // create: (_) => injector<RemoteArticlesCubit>()..getData(),
+            create: (_) => getIt<LoginScreenCubit>()),
+        BlocProvider(create: (_) => injector<AudioCubit>()..init()),
       ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
