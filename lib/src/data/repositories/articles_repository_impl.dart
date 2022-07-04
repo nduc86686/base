@@ -10,11 +10,11 @@ import '../../core/resources/data_state.dart';
 import '../../domain/entities/article.dart';
 import '../../domain/repositories/articles_repository.dart';
 import '../datasources/remote/news_api_service.dart';
-@injectable
+@Injectable(as: ArticlesRepository)
 class ArticlesRepositoryImpl implements ArticlesRepository {
     NewsApiService? _newsApiService;
 
-  ArticlesRepositoryImpl(this._newsApiService);
+  ArticlesRepositoryImpl(@factoryParam this._newsApiService);
 
   @override
   Future<DataState<List<Article>>> getBreakingNewsArticles(

@@ -1,15 +1,11 @@
-import 'package:duck/src/presentation/views/login/login_screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:ionicons/ionicons.dart';
 
 import '../../domain/entities/article.dart';
-import '../cubit/audio_cubit/audio_cubit.dart';
-import '../cubit/audio_cubit/audio_state.dart';
 import '../cubit/remote_articles/remote_articles_cubit.dart';
 import '../widgets/article_widget.dart';
-import 'audio/play_screen.dart';
 
 class BreakingNewsView extends StatefulWidget {
   const BreakingNewsView({Key? key}) : super(key: key);
@@ -50,15 +46,13 @@ class _BreakingNewsViewState extends State<BreakingNewsView> {
       actions: [
         Builder(
           builder: (context) => GestureDetector(
-            onTap: () => Navigator.of(context)
-                .pushNamed('/'),
+            onTap: () => Navigator.of(context).pushNamed('/'),
             child: const Padding(
               padding: EdgeInsets.symmetric(horizontal: 14),
               child: Icon(Ionicons.bookmark, color: Colors.black),
             ),
           ),
         ),
-        ViewSlider()
       ],
     );
   }
@@ -115,35 +109,4 @@ class _BreakingNewsViewState extends State<BreakingNewsView> {
   void _onShowSavedArticlesViewTapped(BuildContext context) {
     Navigator.pushNamed(context, '/SavedArticlesView');
   }
-  
 }
-class ViewSlider extends StatelessWidget {
-  const ViewSlider({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return  BlocBuilder<AudioCubit, AudioState>(
-  builder: (context, state) {
-    print(state.isPlaying);
-    return Visibility(
-      visible: state.isPlaying==true,
-      child: StreamBuilder<PositionData>(
-        stream: context.read<AudioCubit>().positionDataStream,
-        builder: (_, snapshot) {
-          final positionData = snapshot.data;
-          final duration = positionData?.duration.inMicroseconds ?? 1;
-          final position = positionData?.position.inMicroseconds ?? 0;
-          return Slider(
-            onChanged: context.read<AudioCubit>().changePositionPlayer,
-            onChangeEnd: context.read<AudioCubit>().changePositionPlayer,
-            value:
-            position > 0 && position <= duration ? position / duration : 0.0,
-          );
-        },
-      ),
-    );
-  },
-);
-  }
-}
-

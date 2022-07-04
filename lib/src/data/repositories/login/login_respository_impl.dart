@@ -10,7 +10,7 @@ import 'package:injectable/injectable.dart';
 import '../../../core/network/base_responsitory.dart';
 import '../../../core/network/client.dart';
 import '../../datasources/remote/login/login_api_service.dart';
-@injectable
+@Injectable(as: LoginRepository)
 class LoginRepositoryImpl implements LoginRepository {
   LoginApiService? _loginApiService;
 

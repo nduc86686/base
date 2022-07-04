@@ -11,7 +11,7 @@ class AppRoutes {
       case '/BreakingNewsView':
         return _materialRoute(BreakingNewsView());
         case '/':
-        return _materialRoute(PlayScreen());
+        return _materialRoute(BreakingNewsView());
         case '/login':
         return _materialRoute(LoginScreen());
 

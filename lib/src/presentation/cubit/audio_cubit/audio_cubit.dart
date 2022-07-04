@@ -1,14 +1,16 @@
 import 'dart:developer';
 
 import 'package:bloc/bloc.dart';
+import 'package:duck/src/injector.dart';
+import 'package:injectable/injectable.dart';
 import 'package:just_audio/just_audio.dart';
 import 'package:rxdart/rxdart.dart';
 
 import '../../views/audio/play_screen.dart';
 import 'audio_state.dart';
-
+@injectable
 class AudioCubit extends Cubit<AudioState> {
-  AudioCubit(this.audioPlayer) : super(AudioState(player: audioPlayer));
+  AudioCubit(@factoryParam this.audioPlayer) : super(AudioState(player: audioPlayer));
   final AudioPlayer audioPlayer;
 
   void init() async {

@@ -8,7 +8,6 @@ import '../../models/breaking_news_response_model.dart';
 part 'news_api_service.g.dart';
 
 @RestApi(baseUrl: kBaseUrl)
-@factoryMethod
 abstract class NewsApiService {
   factory NewsApiService(Dio dio, {String baseUrl}) = _NewsApiService;
 
